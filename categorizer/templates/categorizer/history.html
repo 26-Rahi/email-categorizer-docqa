@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email History</title>
+</head>
+<body>
+    <h2>Prediction History</h2>
+    <a href="/">← Back to Categorizer</a>
+    <hr>
+    {% if emails %}
+        <ul>
+            {% for email in emails %}
+                <li>
+                    <strong>Category:</strong> {{ email.category }}<br>
+                    <strong>Email:</strong><br>
+                    <pre>{{ email.content }}</pre>
+                    <em>Submitted: {{ email.created_at|date:"F j, Y" }}</em>
+                </li>
+                <hr>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No emails categorized yet.</p>
+    {% endif %}
+</body>
+</html>
