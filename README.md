@@ -16,7 +16,7 @@ This Django-based web app automatically categorizes and summarizes emails using 
 - Transformers: facebook/bart-large-mnli, distilbart-cnn-12-6, layoutlm-document-qa
 - Sklearn: KMeans, TfidfVectorizer
 - OCR: Tesseract + Poppler (for PDF images)
-- Frontend: HTML/CSS (Bootstrap optional)
+- Frontend: HTML/CSS
 
 ---
 
